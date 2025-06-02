@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind with Google Fonts</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rakkas&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              rakkas: ["Rakkas", "cursive"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom Styles -->
+    <style type="text/tailwind">
+      @layer base {
+        body {
+          @apply font-poppins;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="font-poppins">
+    <header class="flex items-center justify-between absolute w-full z-50 bg-transparent text-white mt-[32px]">
+      <div class="text-center font-semibold text-2xl ml-[25px]"><span class="font-rakkas text-4xl">Bali</span><br />Travel</div>
+
+      <nav>
+        <ul class="flex gap-9 font-medium text-xl mr-[120px]">
+          <li><a href="">Home</a></li>
+          <li class="relative group cursor-pointer flex items-center gap-1">
+            <span>Destinasi</span>
+            <!-- Icon panah -->
+            <svg class="w-4 h-4 fill-current text-white transition-transform group-hover:rotate-180" viewBox="0 0 20 20">
+              <path d="M5.5 7l4.5 4.5L14.5 7z" />
+            </svg>
+
+            <!-- Dropdown menu -->
+            <ul class="absolute top-full left-0 mt-2 w-48 bg-white/30 backdrop-blur-md text-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-white">
+              <li><a href="#" class="block px-4 py-2 hover:bg-white/40 rounded-t-lg">Pantai</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-white/40">Gunung</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-white/40">Budaya</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-white/40 rounded-b-lg">Kuil</a></li>
+            </ul>
+          </li>
+          <li>Galeri</li>
+          <li>Blog</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="relative bg-center bg-no-repeat bg-cover bg-[url('img/image.png')] h-[400px]">
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <div class="relative z-10 px-4 mx-auto max-w-screen-xl text-center flex flex-col justify-center items-center h-full">
+        <div class="mt-[156px]">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">Temukan Keindahan</h1>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl text-white font-semibold mb-6">Wisata Di Bali</h2>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center mt-[34px]">
+      <h1 class="text-[30px] font-poppins font-bold">Destinasi Populer</h1>
+    </div>
+
+    <!-- Start Card Destinasi -->
+
+    <div class="flex justify-center items-center gap-4 mt-[34px]">
+      <div class="max-w-[263px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/image.png" alt="" />
+        </a>
+        <div class="p-4">
+          <a href="#">
+            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+      </div>
+      <div class="max-w-[263px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/image.png" alt="" />
+        </a>
+        <div class="p-4">
+          <a href="#">
+            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+      </div>
+      <div class="max-w-[263px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/image.png" alt="" />
+        </a>
+        <div class="p-4">
+          <a href="#">
+            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+      </div>
+      <div class="max-w-[263px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/image.png" alt="" />
+        </a>
+        <div class="p-4">
+          <a href="#">
+            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Destinasi End -->
+  </body>
+</html>
