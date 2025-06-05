@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI/UX Competition</title>
+    <title>Tailwind with Google Fonts</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -66,7 +66,7 @@
       </nav>
     </header>
 
-    <section class="relative bg-center bg-no-repeat bg-cover bg-[url('img/image.png')] h-[400px]">
+    <section class="relative bg-center bg-no-repeat bg-cover bg-[url('img/pantai1.jpg')] h-[400px]">
       <div class="absolute inset-0 bg-black/40"></div>
 
       <div class="relative z-10 px-4 mx-auto max-w-screen-xl text-center flex flex-col justify-center items-center h-full">
@@ -86,7 +86,7 @@
     <div class="flex justify-center items-center gap-4 mt-[34px]">
       <div class="max-w-[263px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/image.png" alt="" />
+          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/tanahlot.jpg" alt="tanahlot" />
         </a>
         <div class="p-4">
           <a href="#">
@@ -97,7 +97,7 @@
       </div>
       <div class="max-w-[263px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/image.png" alt="" />
+          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/pantai pandawa.jpg" alt="pantai pandawa" />
         </a>
         <div class="p-4">
           <a href="#">
@@ -108,7 +108,7 @@
       </div>
       <div class="max-w-[263px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/image.png" alt="" />
+          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/seminyak.jpeg" alt="pantai seminyak" />
         </a>
         <div class="p-4">
           <a href="#">
@@ -119,7 +119,7 @@
       </div>
       <div class="max-w-[263px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/image.png" alt="" />
+          <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/panglipuran.jpg" alt="panglipuran" />
         </a>
         <div class="p-4">
           <a href="#">
@@ -132,71 +132,90 @@
 
     <!-- Card Destinasi End -->
 
-    <div class="text-center mt-[60px]">
-      <h1 class="text-[30px] font-poppins font-bold">Detail Destinasi</h1>
+    <!-- Start Card Detail Destinasi -->
+<div class="max-w-6xl mx-auto px-4 py-16">
+  <div class="bg-white rounded-2xl shadow-xl overflow-hidden p-8 space-y-12">
+    <h2 class="text-3xl font-bold text-center mb-6">Destinasi Wisata Favorit di Bali</h2>
+    <p class="text-gray-700 text-center mb-12">
+      Jelajahi keindahan alam dan budaya Bali dari tempat-tempat paling menakjubkan berikut ini.
+    </p>
+
+    <!-- Destinasi 1 (Gambar kiri) -->
+    <div class="flex flex-col md:flex-row items-center gap-6">
+  <img src="/img/tanahlot.jpg" alt="Tanah Lot" class="w-96 h-auto object-cover rounded-lg shadow-lg" />
+  
+  <div class="md:w-1/2 space-y-4">
+    <!-- Teks awal yang selalu terlihat -->
+    <h1 class="text-3xl font-bold text-gray-900">Tanah Lot</h1>
+    <h2 class="text-xl font-semibold text-gray-800">Keagungan Pura di Atas Lautan</h2>
+    <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">Tanah Lot adalah salah satu ikon spiritual dan budaya paling terkenal di Bali. Terletak di atas batu karang besar yang menjorok ke lautan, pura ini tampak seolah mengapung di atas air saat air laut pasang. Perpaduan antara keindahan alam, kekuatan laut, dan arsitektur suci menjadikan Tanah Lot sebagai tempat yang memukau jiwa dan mata.</h2>
+    <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">Dikenal sebagai tempat pemujaan dewa laut, Tanah Lot adalah simbol harmoni antara manusia dan alam. Saat matahari terbenam, siluet pura di atas ombak menciptakan panorama legendaris yang sulit dilupakan — menjadikannya salah satu titik sunset terbaik di Asia Tenggara.</h2>
+    <!-- Teks tersembunyi yang muncul saat diklik -->
+    <div id="moreContent" class="hidden space-y-4">
+      <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Pura di atas karang laut dengan aura spiritual yang kuat. Pemandangan matahari terbenam yang dramatis dan romantis. Upacara keagamaan dan pertunjukan tari tradisional (terjadwal). Deretan toko seni dan kuliner lokal di sekitar kawasan wisata.
+      </p>
+
+      <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Area parkir luas dan area pedestrian yang tertata. Tersedia pusat informasi, toilet, dan tempat istirahat. Jalur akses memadai untuk semua usia. Lokasi sangat cocok untuk wisatawan budaya dan fotografer.
+      </p>
+
+      <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Desa Kutuh, Kecamatan Kuta Selatan, Kabupaten Badung, Bali ± 30 menit dari Bandara Ngurah Rai
+      </p>
     </div>
-    <!-- Kiri Kanan Start -->
 
-    <div class="max-w-6xl mx-auto px-4 py-10 space-y-20 mt-[28px]">
-      <!-- Blok 1: Teks kiri, gambar kanan -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        <div class="flex flex-col justify-center">
-          <h2 class="text-xl md:text-2xl font-bold text-gray-900">Pantai Pandawa</h2>
-          <h3 class="text-base font-semibold text-gray-800 mt-2">Surga Tersembunyi di Selatan Bali</h3>
-          <p class="mt-4 text-gray-700 text-base leading-relaxed">
-            Terletak di balik tebing kapur yang menjulang tinggi, Pantai Pandawa dikenal sebagai salah satu destinasi tersembunyi yang kini menjadi ikon wisata di Bali Selatan.<br />
-            Hamparan pasir putih yang lembut, air laut biru jernih, serta suasana tenang menjadikan pantai ini tempat yang sempurna untuk berlibur dengan nuansa eksklusif.
-          </p>
-          <h3 class="text-base font-semibold text-gray-800 mt-6">Aktivitas</h3>
-          <p class="mt-2 text-gray-700 text-base leading-relaxed">
-            Bersantai di pasir putih dengan panorama Samudra Hindia.<br />
-            Bermain kano & snorkeling di perairan yang tenang dan dangkal.<br />
-            Menikmati matahari terbenam yang dramatis di ufuk barat.
-          </p>
-          <p class="mt-6 text-gray-700 text-base leading-relaxed">
-            <strong>Lokasi</strong><br />
-            Desa Kutuh, Kecamatan Kuta Selatan, Kabupaten Badung, Bali<br />
-            ± 30 menit dari Bandara Ngurah Rai
-          </p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <button class="px-6 py-2 bg-emerald-900 text-white rounded-md hover:bg-emerald-800 transition">Lihat Galeri</button>
-            <button class="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition">Rencanakan Perjalanan</button>
-          </div>
-        </div>
+    <!-- Tombol untuk menampilkan konten -->
+    <button id="readMoreBtn" class="text-blue-600 text-sm mt-2 hover:underline">Baca Selengkapnya</button>
+  </div>
+</div>
 
-        <div class="h-[500px]"><img src="/img/image.png" alt="Pantai Pandawa" class="w-full h-full object-cover rounded-lg shadow-lg" /></div>
-      </div>
-
-      <!-- Blok 2: Gambar kiri, teks kanan -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-        <div class="h-[500px]"><img src="/img/www.webp" alt="Pantai Pandawa" class="w-full h-full object-cover rounded-lg shadow-lg" /></div>
-
-        <div class="flex flex-col justify-center">
-          <h2 class="text-xl md:text-2xl font-bold text-gray-900">Pantai Pandawa</h2>
-          <h3 class="text-base font-semibold text-gray-800 mt-2">Surga Tersembunyi di Selatan Bali</h3>
-          <p class="mt-4 text-gray-700 text-base leading-relaxed">
-            Terletak di balik tebing kapur yang menjulang tinggi, Pantai Pandawa dikenal sebagai salah satu destinasi tersembunyi yang kini menjadi ikon wisata di Bali Selatan.<br />
-            Hamparan pasir putih yang lembut, air laut biru jernih, serta suasana tenang menjadikan pantai ini tempat yang sempurna untuk berlibur dengan nuansa eksklusif.
-          </p>
-          <h3 class="text-base font-semibold text-gray-800 mt-6">Aktivitas</h3>
-          <p class="mt-2 text-gray-700 text-base leading-relaxed">
-            Bersantai di pasir putih dengan panorama Samudra Hindia.<br />
-            Bermain kano & snorkeling di perairan yang tenang dan dangkal.<br />
-            Menikmati matahari terbenam yang dramatis di ufuk barat.
-          </p>
-          <p class="mt-6 text-gray-700 text-base leading-relaxed">
-            <strong>Lokasi</strong><br />
-            Desa Kutuh, Kecamatan Kuta Selatan, Kabupaten Badung, Bali<br />
-            ± 30 menit dari Bandara Ngurah Rai
-          </p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <button class="px-6 py-2 bg-emerald-900 text-white rounded-md hover:bg-emerald-800 transition">Lihat Galeri</button>
-            <button class="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition">Rencanakan Perjalanan</button>
-          </div>
-        </div>
+    <!-- Destinasi 2 (Gambar kanan) -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-6">
+      <img src="/img/pantai pandawa.jpg" alt="Pantai Pandawa" class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md" />
+      <div class="md:w-1/2">
+        <h3 class="text-xl font-semibold mb-2">Pantai Pandawa</h3>
+        <p class="text-gray-600 text-sm">
+          Pantai tersembunyi yang mempesona dengan pasir putih dan tebing tinggi yang unik.
+        </p>
       </div>
     </div>
 
-    <!-- Kiri Kanan End -->
+    <!-- Destinasi 3 (Gambar kiri) -->
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <img src="/img/seminyak.jpeg" alt="Pantai Seminyak" class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md" />
+      <div class="md:w-1/2">
+        <h3 class="text-xl font-semibold mb-2">Pantai Seminyak</h3>
+        <p class="text-gray-600 text-sm">
+          Pantai trendi dengan ombak tenang dan restoran tepi laut yang estetik.
+        </p>
+      </div>
+    </div>
+
+    <!-- Destinasi 4 (Gambar kanan) -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-6">
+      <img src="/img/panglipuran.jpg" alt="Desa Panglipuran" class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md" />
+      <div class="md:w-1/2">
+        <h3 class="text-xl font-semibold mb-2">Desa Panglipuran</h3>
+        <p class="text-gray-600 text-sm">
+          Desa adat yang bersih dan tertata rapi, mempertahankan warisan budaya Bali.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tombol Aksi -->
+    <div class="text-center pt-6">
+      <button class="bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-2 rounded-full font-semibold mr-4 transition">Lihat Galeri</button>
+      <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition">Rencanakan Perjalanan</button>
+    </div>
+  </div>
+</div>
+<!-- End Card Detail Destinasi Zigzag -->
+
+<!-- Script JS -->
+<script src="script.js"></script>
   </body>
 </html>
