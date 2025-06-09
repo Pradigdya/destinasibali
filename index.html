@@ -61,21 +61,17 @@
 
           <li><a href="">About</a></li>
         </ul>
-      </nav>  
+      </nav>
     </header>
-    
+
     <!-- Wave Background -->
     <section class="relative bg-cover bg-center h-[600px]" style="background-image: url('/img/pantai1.jpg')">
       <!-- Overlay gelap -->
       <div class="absolute inset-0 bg-black/30 z-10"></div>
-    
+
       <!-- WAVE -->
       <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none z-20 h-[200px] pointer-events-none">
-        <svg id="wave-svg" class="w-full h-full"
-             viewBox="0 0 1440 320"
-             preserveAspectRatio="none"
-             xmlns="http://www.w3.org/2000/svg">
-    
+        <svg id="wave-svg" class="w-full h-full" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <!-- GRADIENT DEFINISI -->
           <defs>
             <linearGradient id="gradientWave3" x1="0" y1="0" x2="0" y2="1">
@@ -85,64 +81,62 @@
               <stop offset="100%" stop-color="#ffffff" />
             </linearGradient>
           </defs>
-    
+
           <!-- Wave 1: biru -->
           <path id="wavePath1" fill="#4FC3F7" fill-opacity="0.8" d="M0,160 C360,80 1080,240 1440,160 L1440,320 L0,320 Z" />
-    
+
           <!-- Wave 2: semi transparan biru -->
           <path id="wavePath2" fill="#205c76" fill-opacity="0.6" d="M0,140 C420,60 1020,260 1440,140 L1440,320 L0,320 Z" />
-    
+
           <!-- Wave 3: gradasi statis (paling atas agar menyatu) -->
           <path id="wavePath3" fill="url(#gradientWave3)" d="M0,180 C300,140 1140,220 1440,180 L1440,320 L0,320 Z" />
         </svg>
       </div>
     </section>
-    
+
     <!-- ANIME.JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-    
+
     <!-- ANIMASI WAVE -->
     <script>
-      const wavePath1 = document.getElementById('wavePath1');
-      const wavePath2 = document.getElementById('wavePath2');
-      const wavePath3 = document.getElementById('wavePath3');
+      const wavePath1 = document.getElementById("wavePath1");
+      const wavePath2 = document.getElementById("wavePath2");
+      const wavePath3 = document.getElementById("wavePath3");
 
       const wave1_1 = "M0,160 C360,80 1080,240 1440,160 L1440,320 L0,320 Z";
       const wave1_2 = "M0,140 C420,60 1020,260 1440,140 L1440,320 L0,320 Z";
       const wave1_3 = "M0,180 C300,100 1140,200 1440,180 L1440,320 L0,320 Z";
-    
+
       anime({
         targets: wavePath1,
         d: [{ value: wave1_2 }, { value: wave1_3 }, { value: wave1_1 }],
         duration: 6000,
-        direction: 'alternate',
+        direction: "alternate",
         loop: true,
-        easing: 'easeInOutSine'
+        easing: "easeInOutSine",
       });
-    
+
       anime({
         targets: wavePath2,
         d: [{ value: wave1_3 }, { value: wave1_1 }, { value: wave1_2 }],
         duration: 6000,
-        direction: 'alternate',
+        direction: "alternate",
         loop: true,
-        easing: 'easeInOutSine',
-        delay: 1000
+        easing: "easeInOutSine",
+        delay: 1000,
       });
 
       anime({
         targets: wavePath3,
         d: [{ value: wave1_1 }, { value: wave1_2 }, { value: wave1_3 }],
         duration: 6000,
-        direction: 'alternate',
+        direction: "alternate",
         loop: true,
-        easing: 'easeInOutSine',
-        delay: 2000
+        easing: "easeInOutSine",
+        delay: 2000,
       });
     </script>
     <!-- END ANIMASI WAVE -->
-
-
 
     <main class="bg-white">
       <h2 class="text-center text-2xl font-bold mt-6">Destinasi Populer</h2>
@@ -162,9 +156,7 @@
           <p class="text-sm text-gray-700 text-justify indent-2 min-h-[144px]">
             Terletak di kawasan Tampaksiring, Tirta Empul merupakan pura suci umat Hindu yang terkenal dengan kolam mata air alaminya. Pura ini menjadi pusat kegiatan spiritual, khususnya ritual melukat atau penyucian diri.
           </p>
-          <a href="#tirtaempul" class="inline-block mt-4 bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-300">
-            Lihat Selengkapnya
-          </a>
+          <a href="#tirtaempul" class="inline-block mt-4 bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-300"> Lihat Selengkapnya </a>
         </div>
       </div>
 
@@ -180,9 +172,7 @@
           <p class="text-sm text-gray-700 text-justify indent-2 min-h-[144px]">
             Terletak di dataran tinggi Bedugul, Pura Ulun Danu Beratan adalah salah satu ikon wisata Bali yang paling dikenal. Pura ini berdiri anggun di tepi Danau Beratan, seolah terapung saat air danau naik.
           </p>
-          <a href="#ulundanu" class="inline-block mt-4 bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-300">
-            Lihat Selengkapnya
-          </a>
+          <a href="#ulundanu" class="inline-block mt-4 bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-300"> Lihat Selengkapnya </a>
         </div>
       </div>
       <!-- Pantai Kelingking -->
@@ -197,9 +187,7 @@
           <p class="text-sm text-gray-700 text-justify indent-2 min-h-[144px]">
             Terletak di barat Nusa Penida, Pantai Kelingking memiliki tebing curam menyerupai tulang dinosaurus. Dari atas, terlihat laut biru dan pantai tersembunyi di bawah.
           </p>
-          <a href="#kelingking" class="inline-block mt-4 bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-300">
-            Lihat Selengkapnya
-          </a>
+          <a href="#kelingking" class="inline-block mt-4 bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-300"> Lihat Selengkapnya </a>
         </div>
       </div>
       <!-- Tanah Lot -->
@@ -214,9 +202,7 @@
           <p class="text-sm text-gray-700 text-justify indent-2 min-h-[144px]">
             Tanah Lot berdiri di atas batu karang besar di lautan. Saat pasang, terlihat seperti mengapung. Perpaduan alam, laut, dan arsitektur menjadikannya sangat menakjubkan.
           </p>
-          <a href="#tanahlot" class="inline-block mt-4 bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-300">
-            Lihat Selengkapnya
-          </a>
+          <a href="#tanahlot" class="inline-block mt-4 bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-300"> Lihat Selengkapnya </a>
         </div>
       </div>
     </div>
@@ -225,7 +211,7 @@
 
     <!-- Start Card Detail Destinasi -->
     <div class="max-w-6xl mx-auto px-4 py-16">
-      <div id="destinasi" class="px-5 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"></div>
+      <div id="destinasi-tittle" class="px-5 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"></div>
       <div class="bg-white rounded-2xl shadow-xl overflow-hidden p-8 space-y-12">
         <h1 class="text-[30px] font-poppins font-bold text-center mb-8">Detail Destinasi</h1>
         <p class="text-xl font-semibold text-center mb-12">Jelajahi keindahan alam dan budaya Bali dari tempat-tempat paling menakjubkan berikut ini.</p>
@@ -339,51 +325,51 @@
             </button>
           </div>
         </div>
-       
+
         <!-- Destinasi pantai kelingking (Gambar kiri) -->
         <div id="kelingking" class="flex flex-col md:flex-row items-center gap-6 scroll-mt-20 mt-20">
-        <div class="flex flex-col md:flex-row items-center gap-6">
-          <img
-            src="/img/pantai-kelingking.png"
-            alt="Pantai Kelingking"
-            class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-          />
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <img
+              src="/img/pantai-kelingking.png"
+              alt="Pantai Kelingking"
+              class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
+            />
 
-          <div class="md:w-1/2 space-y-4">
-            <!-- Teks awal -->
-            <h1 class="text-3xl font-bold text-gray-900">Pantai Kelingking</h1>
-            <h2 class="text-xl font-semibold text-gray-800">Surga Tersembunyi di Nusa Penida</h2>
-            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-              Pantai Kelingking adalah salah satu destinasi paling ikonik di Nusa Penida, Bali. Dikenal karena tebing berbentuk seperti tulang punggung dinosaurus, pantai ini menyuguhkan pemandangan yang spektakuler dari atas bukit dan
-              lautan biru yang luas.
-            </h2>
-            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-              Kombinasi antara tebing tinggi, pasir putih tersembunyi di bawah, dan warna laut yang mencolok menjadikan Kelingking sebagai destinasi wajib untuk para petualang dan pencinta fotografi alam.
-            </h2>
+            <div class="md:w-1/2 space-y-4">
+              <!-- Teks awal -->
+              <h1 class="text-3xl font-bold text-gray-900">Pantai Kelingking</h1>
+              <h2 class="text-xl font-semibold text-gray-800">Surga Tersembunyi di Nusa Penida</h2>
+              <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+                Pantai Kelingking adalah salah satu destinasi paling ikonik di Nusa Penida, Bali. Dikenal karena tebing berbentuk seperti tulang punggung dinosaurus, pantai ini menyuguhkan pemandangan yang spektakuler dari atas bukit dan
+                lautan biru yang luas.
+              </h2>
+              <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+                Kombinasi antara tebing tinggi, pasir putih tersembunyi di bawah, dan warna laut yang mencolok menjadikan Kelingking sebagai destinasi wajib untuk para petualang dan pencinta fotografi alam.
+              </h2>
 
-            <!-- Teks tersembunyi -->
-            <div id="moreContent-kelingking" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
-              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Menikmati panorama dari atas tebing, mendaki turun menuju pantai tersembunyi (bagi yang cukup fit), fotografi landscape, serta menikmati suasana tenang dan alami tanpa keramaian berlebih.
-              </p>
+              <!-- Teks tersembunyi -->
+              <div id="moreContent-kelingking" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+                <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  Menikmati panorama dari atas tebing, mendaki turun menuju pantai tersembunyi (bagi yang cukup fit), fotografi landscape, serta menikmati suasana tenang dan alami tanpa keramaian berlebih.
+                </p>
 
-              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Terdapat tempat parkir, beberapa warung kecil, toilet umum, dan area istirahat. Namun fasilitas terbatas, disarankan membawa perlengkapan pribadi seperti air minum dan topi pelindung matahari.
-              </p>
+                <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  Terdapat tempat parkir, beberapa warung kecil, toilet umum, dan area istirahat. Namun fasilitas terbatas, disarankan membawa perlengkapan pribadi seperti air minum dan topi pelindung matahari.
+                </p>
 
-              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">Dusun Karang Dawa, Desa Bunga Mekar, Nusa Penida, Bali — dapat diakses dengan kapal cepat dari Pelabuhan Sanur ± 45 menit lalu dilanjutkan dengan perjalanan darat.</p>
+                <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">Dusun Karang Dawa, Desa Bunga Mekar, Nusa Penida, Bali — dapat diakses dengan kapal cepat dari Pelabuhan Sanur ± 45 menit lalu dilanjutkan dengan perjalanan darat.</p>
+              </div>
+
+              <!-- Tombol untuk menampilkan konten -->
+              <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-kelingking">
+                Read More
+              </button>
             </div>
-
-            <!-- Tombol untuk menampilkan konten -->
-            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-kelingking">
-              Read More
-            </button>
           </div>
         </div>
-      </div>
         <!-- Destinasi pantai melasti(Gambar kanan) -->
         <div class="flex flex-col md:flex-row-reverse items-center gap-6">
           <img src="/img/melasti.webp" alt="pantai melasti" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
@@ -419,112 +405,112 @@
 
         <!-- Destinasi pura ulun (Gambar kiri) -->
         <div id="ulundanu" class="flex flex-col md:flex-row items-center gap-6 scroll-mt-20 mt-20">
-        <div id="destinasi-pura" class="flex flex-col md:flex-row items-center gap-6">
-          <img src="/img/Pura_Ulun.jpg" alt="Pura Ulun Danu" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
-          <div class="md:w-1/2">
-            <h1 class="text-3xl font-bold text-gray-900">Pura Ulun Danu</h1>
-            <h2 class="text-xl font-semibold text-gray-800">Keindahan dan Ketenteraman di Tepi Danau</h2>
-            <p class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-              Pura Ulun Danu Beratan adalah salah satu pura ikonik di Bali yang terletak di tepi Danau Beratan, Bedugul. Keindahan arsitektur pura yang seolah mengapung di atas danau menciptakan suasana yang damai dan memukau.
-            </p>
-            <p class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-              Dengan latar pegunungan yang hijau dan udara yang sejuk, tempat ini sangat cocok untuk relaksasi, berfoto, dan mengenal spiritualitas serta budaya Bali.
-            </p>
-            <!-- Konten tersembunyi -->
-            <div id="moreContent-ulundanu" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
-              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">Menikmati pemandangan danau dan pura yang memukau, naik perahu tradisional, menjelajah taman sekitar, dan berfoto dengan latar ikonik pura di atas air.</p>
+          <div id="destinasi-pura" class="flex flex-col md:flex-row items-center gap-6">
+            <img src="/img/Pura_Ulun.jpg" alt="Pura Ulun Danu" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+            <div class="md:w-1/2">
+              <h1 class="text-3xl font-bold text-gray-900">Pura Ulun Danu</h1>
+              <h2 class="text-xl font-semibold text-gray-800">Keindahan dan Ketenteraman di Tepi Danau</h2>
+              <p class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+                Pura Ulun Danu Beratan adalah salah satu pura ikonik di Bali yang terletak di tepi Danau Beratan, Bedugul. Keindahan arsitektur pura yang seolah mengapung di atas danau menciptakan suasana yang damai dan memukau.
+              </p>
+              <p class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+                Dengan latar pegunungan yang hijau dan udara yang sejuk, tempat ini sangat cocok untuk relaksasi, berfoto, dan mengenal spiritualitas serta budaya Bali.
+              </p>
+              <!-- Konten tersembunyi -->
+              <div id="moreContent-ulundanu" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+                <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">Menikmati pemandangan danau dan pura yang memukau, naik perahu tradisional, menjelajah taman sekitar, dan berfoto dengan latar ikonik pura di atas air.</p>
 
-              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">Area parkir luas, toilet, restoran, pusat oleh-oleh, tempat ibadah, dan spot foto profesional.</p>
+                <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">Area parkir luas, toilet, restoran, pusat oleh-oleh, tempat ibadah, dan spot foto profesional.</p>
 
-              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">Danau Beratan, Bedugul, Kabupaten Tabanan, Bali — sekitar 1,5-2 jam perjalanan dari Denpasar.</p>
+                <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">Danau Beratan, Bedugul, Kabupaten Tabanan, Bali — sekitar 1,5-2 jam perjalanan dari Denpasar.</p>
+              </div>
+              <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-ulundanu">
+                Read More
+              </button>
             </div>
-            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-ulundanu">
-              Read More
-            </button>
           </div>
         </div>
-      </div>
 
         <div class="flex flex-col md:flex-row items-center gap-6">
           <!-- Teks di kiri -->
-          <div id="tanahlot" class="flex flex-col md:flex-row items-center gap-6 scroll mt-20 mt-20">
-          <div class="md:w-1/2 space-y-4">
-            <h1 class="text-3xl font-bold text-gray-900">Tanah Lot</h1>
-            <h2 class="text-xl font-semibold text-gray-800">Keagungan Pura di Atas Lautan</h2>
-            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-              Tanah Lot adalah salah satu ikon spiritual dan budaya paling terkenal di Bali. Terletak di atas batu karang besar yang menjorok ke lautan, pura ini tampak seolah mengapung di atas air saat air laut pasang. Perpaduan antara
-              keindahan alam, kekuatan laut, dan arsitektur suci menjadikan Tanah Lot sebagai tempat yang memukau jiwa dan mata.
-            </h2>
-            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-              Dikenal sebagai tempat pemujaan dewa laut, Tanah Lot adalah simbol harmoni antara manusia dan alam. Saat matahari terbenam, siluet pura di atas ombak menciptakan panorama legendaris yang sulit dilupakan — menjadikannya salah
-              satu titik sunset terbaik di Asia Tenggara.
-            </h2>
+          <div id="tanahlot" class="flex flex-col md:flex-row items-center gap-6 scroll mt-20">
+            <div class="md:w-1/2 space-y-4">
+              <h1 class="text-3xl font-bold text-gray-900">Tanah Lot</h1>
+              <h2 class="text-xl font-semibold text-gray-800">Keagungan Pura di Atas Lautan</h2>
+              <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+                Tanah Lot adalah salah satu ikon spiritual dan budaya paling terkenal di Bali. Terletak di atas batu karang besar yang menjorok ke lautan, pura ini tampak seolah mengapung di atas air saat air laut pasang. Perpaduan antara
+                keindahan alam, kekuatan laut, dan arsitektur suci menjadikan Tanah Lot sebagai tempat yang memukau jiwa dan mata.
+              </h2>
+              <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+                Dikenal sebagai tempat pemujaan dewa laut, Tanah Lot adalah simbol harmoni antara manusia dan alam. Saat matahari terbenam, siluet pura di atas ombak menciptakan panorama legendaris yang sulit dilupakan — menjadikannya salah
+                satu titik sunset terbaik di Asia Tenggara.
+              </h2>
 
-            <!-- Konten tersembunyi -->
-            <div id="moreContent-tanahlot" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
-              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Pura di atas karang laut dengan aura spiritual yang kuat. Pemandangan matahari terbenam yang dramatis dan romantis. Upacara keagamaan dan pertunjukan tari tradisional (terjadwal). Deretan toko seni dan kuliner lokal di
-                sekitar kawasan wisata.
-              </p>
+              <!-- Konten tersembunyi -->
+              <div id="moreContent-tanahlot" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+                <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  Pura di atas karang laut dengan aura spiritual yang kuat. Pemandangan matahari terbenam yang dramatis dan romantis. Upacara keagamaan dan pertunjukan tari tradisional (terjadwal). Deretan toko seni dan kuliner lokal di
+                  sekitar kawasan wisata.
+                </p>
 
-              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Area parkir luas dan area pedestrian yang tertata. Tersedia pusat informasi, toilet, dan tempat istirahat. Jalur akses memadai untuk semua usia. Lokasi sangat cocok untuk wisatawan budaya dan fotografer.
-              </p>
+                <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  Area parkir luas dan area pedestrian yang tertata. Tersedia pusat informasi, toilet, dan tempat istirahat. Jalur akses memadai untuk semua usia. Lokasi sangat cocok untuk wisatawan budaya dan fotografer.
+                </p>
 
-              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">Desa Beraban, Kecamatan Kediri, Kabupaten Tabanan, Bali ± 1 jam dari Denpasar</p>
+                <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">Desa Beraban, Kecamatan Kediri, Kabupaten Tabanan, Bali ± 1 jam dari Denpasar</p>
+              </div>
+
+              <!-- Tombol tampilkan -->
+              <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-tanahlot">
+                Read More
+              </button>
             </div>
 
-            <!-- Tombol tampilkan -->
-            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-tanahlot">
-              Read More
-            </button>
+            <!-- Gambar di kanan -->
+            <img src="/img/tanahlot.jpg" alt="Tanah Lot" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
           </div>
-
-          <!-- Gambar di kanan -->
-          <img src="/img/tanahlot.jpg" alt="Tanah Lot" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
         </div>
-      </div>
 
         <!-- Destinasi tirta empul (Gambar kiri) -->
         <div id="tirtaempul" class="flex flex-col md:flex-row items-center gap-6 scroll-mt-20 mt-20">
-        <div class="flex flex-col md:flex-row items-center gap-6">
-          <img src="/img/tirta.jpg" alt="Tirta Empul" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
-          <div class="md:w-1/2">
-            <h1 class="text-3xl font-bold text-gray-900">Tirta Empul</h1>
-            <h2 class="text-xl font-semibold text-gray-800">Pusat Penyucian Suci di Tengah Alam</h2>
-            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-              Tirta Empul adalah pura suci air di daerah Tampaksiring, Bali, yang terkenal dengan kolam mata airnya tempat umat Hindu melakukan ritual penyucian diri. Air dari mata air alami di pura ini dianggap suci dan memiliki kekuatan
-              spiritual.
-            </h2>
-            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-              Dikelilingi oleh pemandangan alam yang hijau dan tenang, pengalaman di Tirta Empul tidak hanya memberikan ketenangan batin, tetapi juga mengenalkan pada nilai-nilai budaya dan spiritual masyarakat Bali.
-            </h2>
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <img src="/img/tirta.jpg" alt="Tirta Empul" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+            <div class="md:w-1/2">
+              <h1 class="text-3xl font-bold text-gray-900">Tirta Empul</h1>
+              <h2 class="text-xl font-semibold text-gray-800">Pusat Penyucian Suci di Tengah Alam</h2>
+              <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+                Tirta Empul adalah pura suci air di daerah Tampaksiring, Bali, yang terkenal dengan kolam mata airnya tempat umat Hindu melakukan ritual penyucian diri. Air dari mata air alami di pura ini dianggap suci dan memiliki kekuatan
+                spiritual.
+              </h2>
+              <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+                Dikelilingi oleh pemandangan alam yang hijau dan tenang, pengalaman di Tirta Empul tidak hanya memberikan ketenangan batin, tetapi juga mengenalkan pada nilai-nilai budaya dan spiritual masyarakat Bali.
+              </h2>
 
-            <!-- Teks tersembunyi -->
-            <div id="moreContent-tirtaempul" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
-              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">Melakukan ritual penyucian diri di pancuran, menikmati arsitektur pura, serta belajar tentang makna spiritual yang terkandung dalam tradisi umat Hindu Bali.</p>
+              <!-- Teks tersembunyi -->
+              <div id="moreContent-tirtaempul" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+                <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">Melakukan ritual penyucian diri di pancuran, menikmati arsitektur pura, serta belajar tentang makna spiritual yang terkandung dalam tradisi umat Hindu Bali.</p>
 
-              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">Area parkir, pemandu lokal, toko oleh-oleh, ruang ganti dan kamar mandi bagi pengunjung yang mengikuti ritual.</p>
+                <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">Area parkir, pemandu lokal, toko oleh-oleh, ruang ganti dan kamar mandi bagi pengunjung yang mengikuti ritual.</p>
 
-              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">Desa Manukaya, Kecamatan Tampaksiring, Kabupaten Gianyar, Bali — sekitar 1 jam perjalanan dari Ubud.</p>
+                <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+                <p class="text-gray-700 text-sm leading-relaxed">Desa Manukaya, Kecamatan Tampaksiring, Kabupaten Gianyar, Bali — sekitar 1 jam perjalanan dari Ubud.</p>
+              </div>
+
+              <!-- Tombol Read More -->
+              <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-tirtaempul">
+                Read More
+              </button>
             </div>
-
-            <!-- Tombol Read More -->
-            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-tirtaempul">
-              Read More
-            </button>
           </div>
         </div>
-      </div>
         <div class="flex flex-col md:flex-row-reverse items-center gap-6 mt-12">
           <!-- Gambar di kanan -->
           <img src="/img/besakih.jpg" alt="Pura Besakih" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
@@ -798,80 +784,77 @@
     </div>
     <!-- End Card Detail Destinasi Zigzag -->
 
-<!-- About -->
-<!-- Section Tentang Kami -->
-<section class="relative bg-gradient-to-br from-blue-50 via-white to-blue-100 py-16 overflow-hidden">
-  <!-- Wave di atas -->
-  <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
-    <svg class="relative block w-full h-12 text-white" viewBox="0 0 1440 52" preserveAspectRatio="none">
-      <path fill="currentColor" d="M0,0 C720,52 720,52 1440,0 L1440,52 L0,52 Z"></path>
-    </svg>
-  </div>
-
-  <!-- Konten -->
-  <div class="container mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center gap-10">
-    <!-- Gambar -->
-    <div class="w-full md:w-1/2" data-aos="fade-right" data-aos-duration="1000">
-      <img src="/img/bali.jpg" alt="Tentang Kami" class="rounded-3xl shadow-xl" />
-    </div>
-
-    <!-- Teks -->
-    <div class="w-full md:w-1/2 space-y-4" data-aos="fade-left" data-aos-duration="1000">
-      <h2 class="text-4xl font-bold text-gray-900">Tentang Kami</h2>
-      <p class="text-gray-700 text-justify leading-relaxed indent-8">
-        Kami adalah platform wisata yang berkomitmen memperkenalkan keindahan dan kekayaan budaya Bali kepada dunia. Mulai dari destinasi alam yang memesona, pura suci, hingga pengalaman budaya yang autentik,
-        kami menyajikan informasi lengkap untuk menemani perjalanan Anda di Pulau Dewata.
-      </p>
-      
-      <a href="#destinasi" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-lg transition duration-300">
-        Jelajahi Destinasi
-      </a>
-    </div>
-  </div>
-
-  <!-- Wave di bawah -->
-  <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-    <svg class="relative block w-full h-12 text-white" viewBox="0 0 1440 52" preserveAspectRatio="none">
-      <path fill="currentColor" d="M0,0 C720,52 720,52 1440,0 L1440,52 L0,52 Z"></path>
-    </svg>
-  </div>
-</section>
-
-<!-- Tim Kami -->
-<section class="bg-white py-20" id="our-team">
-  <div class="container mx-auto px-6 md:px-12">
-    <!-- Judul -->
-    <div class="text-center mb-12" data-aos="fade-up">
-      <h2 class="text-4xl font-bold text-gray-900 mb-2">Tim Kami</h2>
-      <p class="text-gray-600 text-sm md:text-base">Mereka di balik layar, menjadikan perjalanan Anda di Bali lebih bermakna.</p>
-    </div>
-
-    <!-- Grid Team -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <!-- Anggota Tim 1 -->
-      <div class="bg-blue-50 rounded-xl p-6 text-center shadow hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
-        <img src="/img/team1.jpg" alt="Team 1" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover shadow-md" />
-        <h3 class="text-xl font-semibold text-gray-800">Dewi Ayu</h3>
-        <p class="text-sm text-gray-600">Travel Consultant</p>
+    <!-- About -->
+    <!-- Section Tentang Kami -->
+    <section class="relative bg-gradient-to-br from-blue-50 via-white to-blue-100 py-16 overflow-hidden">
+      <!-- Wave di atas -->
+      <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
+        <svg class="relative block w-full h-12 text-white" viewBox="0 0 1440 52" preserveAspectRatio="none">
+          <path fill="currentColor" d="M0,0 C720,52 720,52 1440,0 L1440,52 L0,52 Z"></path>
+        </svg>
       </div>
 
-      <!-- Anggota Tim 2 -->
-      <div class="bg-blue-50 rounded-xl p-6 text-center shadow hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
-        <img src="/img/team2.jpg" alt="Team 2" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover shadow-md" />
-        <h3 class="text-xl font-semibold text-gray-800">Made Gita</h3>
-        <p class="text-sm text-gray-600">Cultural Guide</p>
+      <!-- Konten -->
+      <div class="container mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center gap-10">
+        <!-- Gambar -->
+        <div class="w-full md:w-1/2" data-aos="fade-right" data-aos-duration="1000">
+          <img src="/img/bali.jpg" alt="Tentang Kami" class="rounded-3xl shadow-xl" />
+        </div>
+
+        <!-- Teks -->
+        <div class="w-full md:w-1/2 space-y-4" data-aos="fade-left" data-aos-duration="1000">
+          <h2 class="text-4xl font-bold text-gray-900">Tentang Kami</h2>
+          <p class="text-gray-700 text-justify leading-relaxed indent-8">
+            Kami adalah platform wisata yang berkomitmen memperkenalkan keindahan dan kekayaan budaya Bali kepada dunia. Mulai dari destinasi alam yang memesona, pura suci, hingga pengalaman budaya yang autentik, kami menyajikan informasi
+            lengkap untuk menemani perjalanan Anda di Pulau Dewata.
+          </p>
+
+          <a href="#destinasi" class="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-lg transition duration-300"> Jelajahi Destinasi </a>
+        </div>
       </div>
 
-      <!-- Anggota Tim 3 -->
-      <div class="bg-blue-50 rounded-xl p-6 text-center shadow hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
-        <img src="/img/team3.jpg" alt="Team 3" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover shadow-md" />
-        <h3 class="text-xl font-semibold text-gray-800">Agus Pramana</h3>
-        <p class="text-sm text-gray-600">IT & Web Developer</p>
+      <!-- Wave di bawah -->
+      <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+        <svg class="relative block w-full h-12 text-white" viewBox="0 0 1440 52" preserveAspectRatio="none">
+          <path fill="currentColor" d="M0,0 C720,52 720,52 1440,0 L1440,52 L0,52 Z"></path>
+        </svg>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <!-- Tim Kami -->
+    <section class="bg-white py-20" id="our-team">
+      <div class="container mx-auto px-6 md:px-12">
+        <!-- Judul -->
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-4xl font-bold text-gray-900 mb-2">Tim Kami</h2>
+          <p class="text-gray-600 text-sm md:text-base">Mereka di balik layar, menjadikan perjalanan Anda di Bali lebih bermakna.</p>
+        </div>
+
+        <!-- Grid Team -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Anggota Tim 1 -->
+          <div class="bg-blue-50 rounded-xl p-6 text-center shadow hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
+            <img src="/img/team1.jpg" alt="Team 1" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover shadow-md" />
+            <h3 class="text-xl font-semibold text-gray-800">Dewi Ayu</h3>
+            <p class="text-sm text-gray-600">Travel Consultant</p>
+          </div>
+
+          <!-- Anggota Tim 2 -->
+          <div class="bg-blue-50 rounded-xl p-6 text-center shadow hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
+            <img src="/img/team2.jpg" alt="Team 2" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover shadow-md" />
+            <h3 class="text-xl font-semibold text-gray-800">Made Gita</h3>
+            <p class="text-sm text-gray-600">Cultural Guide</p>
+          </div>
+
+          <!-- Anggota Tim 3 -->
+          <div class="bg-blue-50 rounded-xl p-6 text-center shadow hover:shadow-lg transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
+            <img src="/img/team3.jpg" alt="Team 3" class="w-28 h-28 mx-auto rounded-full mb-4 object-cover shadow-md" />
+            <h3 class="text-xl font-semibold text-gray-800">Agus Pramana</h3>
+            <p class="text-sm text-gray-600">IT & Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Script JS -->
     <script src="js/script.js"></script>
@@ -879,17 +862,14 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.3.0/dist/flowbite.min.js"></script>
     <!-- Script AOS About -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    <script>
+      AOS.init();
+    </script>
 
-<!-- Script AOS Tim Kami -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
-
-
+    <!-- Script AOS Tim Kami -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
