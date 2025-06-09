@@ -51,7 +51,7 @@
               <path d="M5.5 7l4.5 4.5L14.5 7z" />
             </svg>
 
-            <ul class="absolute top-full left-0 mt-2 w-48 bg-white/30 backdrop-blur-md text-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-white">
+            <ul class="absolute top-full left-0 mt-2 w-48 bg-white/30 backdrop-blur-md rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-white">
               <li><a href="#" class="block px-4 py-2 hover:bg-white/40 rounded-t-lg">Pantai</a></li>
               <li><a href="#" class="block px-4 py-2 hover:bg-white/40">Gunung</a></li>
               <li><a href="#" class="block px-4 py-2 hover:bg-white/40">Budaya</a></li>
@@ -66,47 +66,35 @@
     <section class="relative bg-cover bg-center h-[600px]" style="background-image: url('/img/pantai1.jpg')">
       <!-- Overlay hitam transparan -->
       <div class="absolute inset-0 bg-black/30"></div>
-    
-       <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none z-10">
-    <svg class="block w-full h-[360px]" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Ombak 1 -->
-      <path 
-      fill="#027ACD" 
-      fill-opacity="0.75" 
-      d="M0,160 C360,80 1080,240 1440,160 L1440,320 L0,320 Z" 
-      />
 
-      <!-- Ombak 2 -->
-      <path 
-      fill="#70D6FF" 
-      fill-opacity="0.8" 
-      d="M0,180 C400,100 1040,260 1440,180 L1440,320 L0,320 Z" 
-      />
+      <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none z-10">
+        <svg class="block w-full h-[360px]" viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Ombak 1 -->
+          <path fill="#027ACD" fill-opacity="0.75" d="M0,160 C360,80 1080,240 1440,160 L1440,320 L0,320 Z" />
 
-      <!-- Ombak 3 + Gradient ke putih -->
-      <path fill="url(#waveGradient)" d="M0,200 C480,140 960,280 1440,200 L1440,320 L0,320 Z" />
+          <!-- Ombak 2 -->
+          <path fill="#70D6FF" fill-opacity="0.8" d="M0,180 C400,100 1040,260 1440,180 L1440,320 L0,320 Z" />
 
-      <!-- Gradient -->
-      <defs>
-        <linearGradient id="waveGradient" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#4FC3F7" />
-          <stop offset="100%" stop-color="#ffffff" />
-        </linearGradient>
-      </defs>
-    </svg>
-  </div>
+          <!-- Ombak 3 + Gradient ke putih -->
+          <path fill="url(#waveGradient)" d="M0,200 C480,140 960,280 1440,200 L1440,320 L0,320 Z" />
+
+          <!-- Gradient -->
+          <defs>
+            <linearGradient id="waveGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#4FC3F7" />
+              <stop offset="100%" stop-color="#ffffff" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
     </section>
-    
 
-      <main class="bg-white">
-        <h2 class="text-center text-2xl font-bold mt-6">Destinasi Populer</h2>
-      </main>
-
-      
+    <main class="bg-white">
+      <h2 class="text-center text-2xl font-bold mt-6">Destinasi Populer</h2>
+    </main>
 
     <!-- Start Card Destinasi -->
     <div class="flex flex-wrap justify-center items-stretch gap-4 mt-[34px]">
-
       <!-- Tirta Empul -->
       <div class="w-[263px] bg-white border border-gray-200 rounded-lg bg-white/30 backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2 flex flex-col">
         <a href="#">
@@ -121,7 +109,7 @@
           </p>
         </div>
       </div>
-    
+
       <!-- Pura Ulun -->
       <div class="w-[263px] bg-white border border-gray-200 rounded-lg bg-white/30 backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2 flex flex-col">
         <a href="#">
@@ -164,7 +152,6 @@
           </p>
         </div>
       </div>
-    
     </div>
 
     <!-- Card Destinasi End -->
@@ -177,42 +164,36 @@
 
         <!-- Destinasi pantai pandawa (Gambar kanan) -->
         <div class="flex flex-col md:flex-row-reverse items-center gap-6">
-          <img
-            src="/img/pantai pandawa.jpg"
-            alt="Pantai Pandawa"
-            class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-          />
+          <img src="/img/pantai pandawa.jpg" alt="Pantai Pandawa" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
           <div class="md:w-1/2">
             <!-- Teks awal -->
-          <h1 class="text-3xl font-bold text-gray-900">Pantai Pandawa</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Surga Tersembunyi di Balik Tebing</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Terletak di kawasan Kutuh, Pantai Pandawa dulu dikenal sebagai "Secret Beach" karena tersembunyi di balik tebing kapur yang tinggi. Kini, akses ke pantai ini telah dibuka lebar dengan jalan yang membelah tebing, memberikan pemandangan dramatis menuju laut biru yang luas.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Pantai ini menawarkan pasir putih yang halus, air laut jernih, dan ombak yang tenang — cocok untuk berenang, bermain kano, atau sekadar bersantai. Patung Pandawa Lima yang berjejer di tebing menjadi daya tarik budaya tersendiri.
-          </h2>
+            <h1 class="text-3xl font-bold text-gray-900">Pantai Pandawa</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Surga Tersembunyi di Balik Tebing</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Terletak di kawasan Kutuh, Pantai Pandawa dulu dikenal sebagai "Secret Beach" karena tersembunyi di balik tebing kapur yang tinggi. Kini, akses ke pantai ini telah dibuka lebar dengan jalan yang membelah tebing, memberikan
+              pemandangan dramatis menuju laut biru yang luas.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Pantai ini menawarkan pasir putih yang halus, air laut jernih, dan ombak yang tenang — cocok untuk berenang, bermain kano, atau sekadar bersantai. Patung Pandawa Lima yang berjejer di tebing menjadi daya tarik budaya
+              tersendiri.
+            </h2>
 
-          <!-- Konten tersembunyi -->
-          <div id="moreContent-pandawa" class="hidden space-y-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Berenang di air laut yang tenang. Kano dan aktivitas air lainnya. Spot foto dengan latar tebing dan patung Pandawa. Kulineran di warung pinggir pantai dan relaksasi di kursi pantai.
-            </p>
+            <!-- Konten tersembunyi -->
+            <div id="moreContent-pandawa" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Berenang di air laut yang tenang. Kano dan aktivitas air lainnya. Spot foto dengan latar tebing dan patung Pandawa. Kulineran di warung pinggir pantai dan relaksasi di kursi pantai.
+              </p>
 
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Area parkir luas, toilet umum, penyewaan kano dan kursi pantai, warung makan, dan jalur pedestrian. Cocok untuk keluarga, pasangan, maupun wisatawan solo.
-            </p>
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Area parkir luas, toilet umum, penyewaan kano dan kursi pantai, warung makan, dan jalur pedestrian. Cocok untuk keluarga, pasangan, maupun wisatawan solo.</p>
 
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Desa Kutuh, Kecamatan Kuta Selatan, Kabupaten Badung, Bali ± 30-40 menit dari Bandara Ngurah Rai.
-            </p>
-          </div>
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Desa Kutuh, Kecamatan Kuta Selatan, Kabupaten Badung, Bali ± 30-40 menit dari Bandara Ngurah Rai.</p>
+            </div>
 
             <!-- Tombol "Baca Selengkapnya" -->
-            <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-kuta">
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-pandawa">
               Baca Selengkapnya
             </button>
           </div>
@@ -220,23 +201,22 @@
 
         <!-- Destinasi pantai seminyak (Gambar kiri) -->
         <div class="flex flex-col md:flex-row items-center gap-6">
-          <img
-            src="/img/seminyak.jpeg"
-            alt="Pantai Seminyak"
-            class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"/>
+          <img src="/img/seminyak.jpeg" alt="Pantai Seminyak" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
           <div class="md:w-1/2">
             <!-- Teks awal -->
             <h1 class="text-3xl font-bold text-gray-900">Pantai Seminyak</h1>
             <h2 class="text-xl font-semibold text-gray-800">Pesona Mewah dan Matahari Terbenam</h2>
             <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-              Pantai Seminyak terkenal sebagai destinasi premium di Bali yang memadukan suasana pantai tropis dengan sentuhan kemewahan. Garis pantainya yang panjang dengan pasir lembut dan ombak yang ramah menjadikannya tempat ideal untuk berjalan santai atau bermain air.
+              Pantai Seminyak terkenal sebagai destinasi premium di Bali yang memadukan suasana pantai tropis dengan sentuhan kemewahan. Garis pantainya yang panjang dengan pasir lembut dan ombak yang ramah menjadikannya tempat ideal untuk
+              berjalan santai atau bermain air.
             </h2>
             <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-              Di sepanjang pantai, berjejer beach club ternama dan restoran kelas dunia yang menawarkan pengalaman kuliner dan hiburan malam yang elegan. Pemandangan matahari terbenam di Seminyak adalah salah satu yang paling menawan di Bali.
+              Di sepanjang pantai, berjejer beach club ternama dan restoran kelas dunia yang menawarkan pengalaman kuliner dan hiburan malam yang elegan. Pemandangan matahari terbenam di Seminyak adalah salah satu yang paling menawan di
+              Bali.
             </h2>
 
             <!-- Teks tersembunyi -->
-            <div id="moreContent-seminyak" class="hidden space-y-4">
+            <div id="moreContent-seminyak" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
               <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
               <p class="text-gray-700 text-sm leading-relaxed">
                 Bersantai di beach club ikonik seperti Potato Head atau Ku De Ta, berenang atau bermain selancar ringan, menikmati sunset sambil bersantap, hingga menikmati spa dan pijat di pinggir pantai.
@@ -248,13 +228,11 @@
               </p>
 
               <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Kecamatan Kuta, Kabupaten Badung, Bali — ± 25 menit dari Bandara Internasional Ngurah Rai, dekat dengan kawasan Legian dan Petitenget.
-              </p>
+              <p class="text-gray-700 text-sm leading-relaxed">Kecamatan Kuta, Kabupaten Badung, Bali — ± 25 menit dari Bandara Internasional Ngurah Rai, dekat dengan kawasan Legian dan Petitenget.</p>
             </div>
 
             <!-- Tombol untuk menampilkan konten -->
-            <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-seminyak">
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-seminyak">
               Baca Selengkapnya
             </button>
           </div>
@@ -262,566 +240,450 @@
 
         <!-- Destinasi pantai kuta (Gambar kanan) -->
         <div class="flex flex-col md:flex-row-reverse items-center gap-6">
-          <img
-            src="/img/pantai-kuta.jpg"
-            alt="Desa Pantai-kuta"
-            class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-          />
+          <img src="/img/pantai-kuta.jpg" alt="Desa Pantai-kuta" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
           <div class="md:w-1/2">
             <!-- Teks awal -->
             <h1 class="text-3xl font-bold text-gray-900">Pantai Kuta</h1>
             <h2 class="text-xl font-semibold text-gray-800">Pantai Legendaris di jantung Bali</h2>
             <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-              Pantai Kuta adalah salah satu destinasi paling terkenal di Bali, terkenal dengan pasir putihnya yang lembut dan ombaknya yang cocok untuk berselancar. Suasana yang hidup, matahari terbenam yang memukau, dan deretan kafe serta toko suvenir menjadikannya magnet bagi wisatawan dari seluruh dunia.
+              Pantai Kuta adalah salah satu destinasi paling terkenal di Bali, terkenal dengan pasir putihnya yang lembut dan ombaknya yang cocok untuk berselancar. Suasana yang hidup, matahari terbenam yang memukau, dan deretan kafe serta
+              toko suvenir menjadikannya magnet bagi wisatawan dari seluruh dunia.
             </h2>
             <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
               Selain menjadi tempat yang sempurna untuk menikmati senja, Pantai Kuta juga menjadi pusat hiburan malam dan aktivitas pantai yang menyenangkan, mulai dari voli, jalan-jalan di tepi pantai, hingga menikmati santapan laut segar.
             </h2>
 
             <!-- Teks tersembunyi -->
-            <div id="moreContent-panglipuran" class="hidden space-y-4">
+            <div id="moreContent-pantaikuta" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
               <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Berselancar, berjemur, bermain bola pantai, menikmati sunset, menyewa papan selancar, hingga mengunjungi beach bar dan kafe di sepanjang garis pantai.
-              </p>
+              <p class="text-gray-700 text-sm leading-relaxed">Berselancar, berjemur, bermain bola pantai, menikmati sunset, menyewa papan selancar, hingga mengunjungi beach bar dan kafe di sepanjang garis pantai.</p>
 
               <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Tersedia area parkir, toilet umum, penyewaan papan selancar, kursi pantai, kafe, restoran, pusat perbelanjaan, serta penginapan berbagai kelas.
-              </p>
+              <p class="text-gray-700 text-sm leading-relaxed">Tersedia area parkir, toilet umum, penyewaan papan selancar, kursi pantai, kafe, restoran, pusat perbelanjaan, serta penginapan berbagai kelas.</p>
 
               <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-              <p class="text-gray-700 text-sm leading-relaxed">
-                Desa Kuta, Kecamatan Kuta, Kabupaten Badung — hanya ±15 menit dari Bandara Internasional Ngurah Rai.
-              </p>
+              <p class="text-gray-700 text-sm leading-relaxed">Desa Kuta, Kecamatan Kuta, Kabupaten Badung — hanya ±15 menit dari Bandara Internasional Ngurah Rai.</p>
             </div>
 
             <!-- Tombol untuk menampilkan konten -->
-            <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-PantaiKuta">
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-pantaikuta">
               Baca Selengkapnya
             </button>
           </div>
         </div>
-      
-      <!-- Destinasi pantai kelingking (Gambar kiri) -->
-      <div class="flex flex-col md:flex-row items-center gap-6">
-        <img
-          src="/img/pantai-kelingking.png"
-          alt="Pantai Kelingking"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-      
-        <div class="md:w-1/2 space-y-4">
-          <!-- Teks awal -->
-          <h1 class="text-3xl font-bold text-gray-900">Pantai Kelingking</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Surga Tersembunyi di Nusa Penida</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Pantai Kelingking adalah salah satu destinasi paling ikonik di Nusa Penida, Bali. Dikenal karena tebing berbentuk seperti tulang punggung dinosaurus, pantai ini menyuguhkan pemandangan yang spektakuler dari atas bukit dan lautan biru yang luas.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Kombinasi antara tebing tinggi, pasir putih tersembunyi di bawah, dan warna laut yang mencolok menjadikan Kelingking sebagai destinasi wajib untuk para petualang dan pencinta fotografi alam.
-          </h2>
-      
-          <!-- Teks tersembunyi -->
-          <div id="moreContent-kelingking" class="hidden space-y-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Menikmati panorama dari atas tebing, mendaki turun menuju pantai tersembunyi (bagi yang cukup fit), fotografi landscape, serta menikmati suasana tenang dan alami tanpa keramaian berlebih.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Terdapat tempat parkir, beberapa warung kecil, toilet umum, dan area istirahat. Namun fasilitas terbatas, disarankan membawa perlengkapan pribadi seperti air minum dan topi pelindung matahari.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Dusun Karang Dawa, Desa Bunga Mekar, Nusa Penida, Bali — dapat diakses dengan kapal cepat dari Pelabuhan Sanur ± 45 menit lalu dilanjutkan dengan perjalanan darat.
-            </p>
+
+        <!-- Destinasi pantai kelingking (Gambar kiri) -->
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <img
+            src="/img/pantai-kelingking.png"
+            alt="Pantai Kelingking"
+            class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
+          />
+
+          <div class="md:w-1/2 space-y-4">
+            <!-- Teks awal -->
+            <h1 class="text-3xl font-bold text-gray-900">Pantai Kelingking</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Surga Tersembunyi di Nusa Penida</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Pantai Kelingking adalah salah satu destinasi paling ikonik di Nusa Penida, Bali. Dikenal karena tebing berbentuk seperti tulang punggung dinosaurus, pantai ini menyuguhkan pemandangan yang spektakuler dari atas bukit dan
+              lautan biru yang luas.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Kombinasi antara tebing tinggi, pasir putih tersembunyi di bawah, dan warna laut yang mencolok menjadikan Kelingking sebagai destinasi wajib untuk para petualang dan pencinta fotografi alam.
+            </h2>
+
+            <!-- Teks tersembunyi -->
+            <div id="moreContent-kelingking" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Menikmati panorama dari atas tebing, mendaki turun menuju pantai tersembunyi (bagi yang cukup fit), fotografi landscape, serta menikmati suasana tenang dan alami tanpa keramaian berlebih.
+              </p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Terdapat tempat parkir, beberapa warung kecil, toilet umum, dan area istirahat. Namun fasilitas terbatas, disarankan membawa perlengkapan pribadi seperti air minum dan topi pelindung matahari.
+              </p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Dusun Karang Dawa, Desa Bunga Mekar, Nusa Penida, Bali — dapat diakses dengan kapal cepat dari Pelabuhan Sanur ± 45 menit lalu dilanjutkan dengan perjalanan darat.</p>
+            </div>
+
+            <!-- Tombol untuk menampilkan konten -->
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-kelingking">
+              Baca Selengkapnya
+            </button>
           </div>
-      
-          <!-- Tombol untuk menampilkan konten -->
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-kelingking">
-            Baca Selengkapnya
-          </button>
         </div>
-      </div>
-      
-      <!-- Destinasi pantai melasti(Gambar kanan) -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-6">
-        <img
-          src="/img/melasti.webp"
-          alt="pantai melasti"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-        <div class="md:w-1/2">
-          <h1 class="text-3xl font-bold text-gray-900">Pantai Melasti</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Keindahan Tersembunyi di Selatan Bali</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Pantai Melasti terletak di kawasan Ungasan, Bali Selatan, dan terkenal dengan tebing kapur yang megah serta air lautnya yang jernih berwarna biru toska.
-            Akses menuju pantai ini melewati jalan berliku di antara tebing-tebing tinggi, memberikan pengalaman visual yang luar biasa sebelum tiba di pantai.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Pantai ini menjadi tempat populer untuk prewedding, yoga, dan healing karena atmosfernya yang tenang dan alami.
-            Keindahan Melasti juga sering digunakan sebagai lokasi upacara Melasti oleh masyarakat Bali.
-          </h2>
-      
-          <!-- Teks tersembunyi -->
-          <div id="moreContent-tirtaempul" class="hidden space-y-4 mt-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Berjemur, berenang, berswafoto di tebing, menikmati sunset, hingga mengikuti kegiatan upacara keagamaan yang diadakan di pura sekitar pantai.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Area parkir luas, kamar mandi dan toilet umum, warung makanan, gazebo, tempat ibadah, serta penyewaan payung dan tikar pantai.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Desa Ungasan, Kecamatan Kuta Selatan, Kabupaten Badung — sekitar 45 menit dari Bandara Ngurah Rai.
-            </p>
+
+        <!-- Destinasi pantai melasti(Gambar kanan) -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-6">
+          <img src="/img/melasti.webp" alt="pantai melasti" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+          <div class="md:w-1/2">
+            <h1 class="text-3xl font-bold text-gray-900">Pantai Melasti</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Keindahan Tersembunyi di Selatan Bali</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Pantai Melasti terletak di kawasan Ungasan, Bali Selatan, dan terkenal dengan tebing kapur yang megah serta air lautnya yang jernih berwarna biru toska. Akses menuju pantai ini melewati jalan berliku di antara tebing-tebing
+              tinggi, memberikan pengalaman visual yang luar biasa sebelum tiba di pantai.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Pantai ini menjadi tempat populer untuk prewedding, yoga, dan healing karena atmosfernya yang tenang dan alami. Keindahan Melasti juga sering digunakan sebagai lokasi upacara Melasti oleh masyarakat Bali.
+            </h2>
+
+            <!-- Teks tersembunyi -->
+            <div id="moreContent-Melasti" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4 mt-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Berjemur, berenang, berswafoto di tebing, menikmati sunset, hingga mengikuti kegiatan upacara keagamaan yang diadakan di pura sekitar pantai.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Area parkir luas, kamar mandi dan toilet umum, warung makanan, gazebo, tempat ibadah, serta penyewaan payung dan tikar pantai.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Desa Ungasan, Kecamatan Kuta Selatan, Kabupaten Badung — sekitar 45 menit dari Bandara Ngurah Rai.</p>
+            </div>
+
+            <!-- Tombol Baca Selengkapnya -->
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-Melasti">
+              Baca Selengkapnya
+            </button>
           </div>
-      
-          <!-- Tombol Baca Selengkapnya -->
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-Melasti">
-            Baca Selengkapnya
-          </button>
         </div>
-      </div>
 
-      <!-- Destinasi pura ulun (Gambar kiri) -->
-      <div class="flex flex-col md:flex-row items-center gap-6">
-        <img
-        src="/img/Pura_Ulun.jpg"
-        alt="Pura Ulun Danu"
-        class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-      />
-        <div class="md:w-1/2">
-          <h1 class="text-3xl font-bold text-gray-900">Pura Ulun Danu</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Keindahan dan Ketenteraman di Tepi Danau</h2>
-          <p class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Pura Ulun Danu Beratan adalah salah satu pura ikonik di Bali yang terletak di tepi Danau Beratan, Bedugul. Keindahan arsitektur pura yang seolah mengapung di atas danau menciptakan suasana yang damai dan memukau.
-          </p>
-          <p class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Dengan latar pegunungan yang hijau dan udara yang sejuk, tempat ini sangat cocok untuk relaksasi, berfoto, dan mengenal spiritualitas serta budaya Bali.
-          </p>
-           <!-- Konten tersembunyi -->
-          <div id="moreContent-ulundanu" class="hidden space-y-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Menikmati pemandangan danau dan pura yang memukau, naik perahu tradisional, menjelajah taman sekitar, dan berfoto dengan latar ikonik pura di atas air.
+        <!-- Destinasi pura ulun (Gambar kiri) -->
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <img src="/img/Pura_Ulun.jpg" alt="Pura Ulun Danu" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+          <div class="md:w-1/2">
+            <h1 class="text-3xl font-bold text-gray-900">Pura Ulun Danu</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Keindahan dan Ketenteraman di Tepi Danau</h2>
+            <p class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Pura Ulun Danu Beratan adalah salah satu pura ikonik di Bali yang terletak di tepi Danau Beratan, Bedugul. Keindahan arsitektur pura yang seolah mengapung di atas danau menciptakan suasana yang damai dan memukau.
             </p>
+            <p class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Dengan latar pegunungan yang hijau dan udara yang sejuk, tempat ini sangat cocok untuk relaksasi, berfoto, dan mengenal spiritualitas serta budaya Bali.
+            </p>
+            <!-- Konten tersembunyi -->
+            <div id="moreContent-ulundanu" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Menikmati pemandangan danau dan pura yang memukau, naik perahu tradisional, menjelajah taman sekitar, dan berfoto dengan latar ikonik pura di atas air.</p>
 
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Area parkir luas, toilet, restoran, pusat oleh-oleh, tempat ibadah, dan spot foto profesional.
-            </p>
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Area parkir luas, toilet, restoran, pusat oleh-oleh, tempat ibadah, dan spot foto profesional.</p>
 
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Danau Beratan, Bedugul, Kabupaten Tabanan, Bali — sekitar 1,5-2 jam perjalanan dari Denpasar.
-            </p>
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Danau Beratan, Bedugul, Kabupaten Tabanan, Bali — sekitar 1,5-2 jam perjalanan dari Denpasar.</p>
+            </div>
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-ulundanu">
+              Baca Selengkapnya
+            </button>
           </div>
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-ulundanu">
-            Baca Selengkapnya
-          </button>
         </div>
-      </div>
 
-      <div class="flex flex-col md:flex-row items-center gap-6">
-        
-        <!-- Teks di kiri -->
-        <div class="md:w-1/2 space-y-4">
-          <h1 class="text-3xl font-bold text-gray-900">Tanah Lot</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Keagungan Pura di Atas Lautan</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Tanah Lot adalah salah satu ikon spiritual dan budaya paling terkenal di Bali. Terletak di atas batu karang besar yang menjorok ke lautan, pura ini tampak seolah mengapung di atas air saat air laut pasang. Perpaduan antara keindahan alam, kekuatan laut, dan arsitektur suci menjadikan Tanah Lot sebagai tempat yang memukau jiwa dan mata.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Dikenal sebagai tempat pemujaan dewa laut, Tanah Lot adalah simbol harmoni antara manusia dan alam. Saat matahari terbenam, siluet pura di atas ombak menciptakan panorama legendaris yang sulit dilupakan — menjadikannya salah satu titik sunset terbaik di Asia Tenggara.
-          </h2>
-      
-          <!-- Konten tersembunyi -->
-          <div id="moreContent-tanahlot" class="hidden space-y-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Pura di atas karang laut dengan aura spiritual yang kuat. Pemandangan matahari terbenam yang dramatis dan romantis. Upacara keagamaan dan pertunjukan tari tradisional (terjadwal). Deretan toko seni dan kuliner lokal di sekitar kawasan wisata.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Area parkir luas dan area pedestrian yang tertata. Tersedia pusat informasi, toilet, dan tempat istirahat. Jalur akses memadai untuk semua usia. Lokasi sangat cocok untuk wisatawan budaya dan fotografer.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Desa Beraban, Kecamatan Kediri, Kabupaten Tabanan, Bali ± 1 jam dari Denpasar
-            </p>
-          </div>
-      
-          <!-- Tombol tampilkan -->
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-tanahlot">
-            Baca Selengkapnya
-          </button>
-        </div>
-      
-        <!-- Gambar di kanan -->
-        <img
-          src="/img/tanahlot.jpg"
-          alt="Tanah Lot"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-      </div>
-      
-    
-      <!-- Destinasi tirta empul (Gambar kiri) -->
-      <div class="flex flex-col md:flex-row items-center gap-6">
-        <img
-          src="/img/tirta.jpg"
-          alt="Tirta Empul"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-        <div class="md:w-1/2">
-          <h1 class="text-3xl font-bold text-gray-900">Tirta Empul</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Pusat Penyucian Suci di Tengah Alam</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Tirta Empul adalah pura suci air di daerah Tampaksiring, Bali, yang terkenal dengan kolam mata airnya tempat umat Hindu melakukan ritual penyucian diri. Air dari mata air alami di pura ini dianggap suci dan memiliki kekuatan spiritual.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Dikelilingi oleh pemandangan alam yang hijau dan tenang, pengalaman di Tirta Empul tidak hanya memberikan ketenangan batin, tetapi juga mengenalkan pada nilai-nilai budaya dan spiritual masyarakat Bali.
-          </h2>
-      
-          <!-- Teks tersembunyi -->
-          <div id="moreContent-tirtaempul" class="hidden space-y-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Melakukan ritual penyucian diri di pancuran, menikmati arsitektur pura, serta belajar tentang makna spiritual yang terkandung dalam tradisi umat Hindu Bali.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Area parkir, pemandu lokal, toko oleh-oleh, ruang ganti dan kamar mandi bagi pengunjung yang mengikuti ritual.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Desa Manukaya, Kecamatan Tampaksiring, Kabupaten Gianyar, Bali — sekitar 1 jam perjalanan dari Ubud.
-            </p>
-          </div>
-      
-          <!-- Tombol Baca Selengkapnya -->
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-tirtaempul">
-            Baca Selengkapnya
-          </button>
-        </div>
-      </div>
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <!-- Teks di kiri -->
+          <div class="md:w-1/2 space-y-4">
+            <h1 class="text-3xl font-bold text-gray-900">Tanah Lot</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Keagungan Pura di Atas Lautan</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Tanah Lot adalah salah satu ikon spiritual dan budaya paling terkenal di Bali. Terletak di atas batu karang besar yang menjorok ke lautan, pura ini tampak seolah mengapung di atas air saat air laut pasang. Perpaduan antara
+              keindahan alam, kekuatan laut, dan arsitektur suci menjadikan Tanah Lot sebagai tempat yang memukau jiwa dan mata.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Dikenal sebagai tempat pemujaan dewa laut, Tanah Lot adalah simbol harmoni antara manusia dan alam. Saat matahari terbenam, siluet pura di atas ombak menciptakan panorama legendaris yang sulit dilupakan — menjadikannya salah
+              satu titik sunset terbaik di Asia Tenggara.
+            </h2>
 
-      <div class="flex flex-col md:flex-row-reverse items-center gap-6 mt-12">
-        <!-- Gambar di kanan -->
-        <img
-          src="/img/besakih.jpg"
-          alt="Pura Besakih"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-      
-        <!-- Teks di kiri -->
-        <div class="md:w-1/2 space-y-4">
-          <h1 class="text-3xl font-bold text-gray-900">Pura Besakih</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Pusat Spiritualitas di Lereng Gunung Agung</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Pura Besakih adalah pura terbesar dan paling suci di Bali, terletak di lereng Gunung Agung. Kompleks ini terdiri dari 23 pura yang berdiri megah dengan latar belakang gunung yang agung, menciptakan suasana spiritual yang kuat dan mengesankan.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Sebagai pusat dari seluruh pura di Bali, Besakih menjadi tempat penting untuk upacara keagamaan besar. Pengunjung dapat merasakan aura mistis, ketenangan alam, dan kekayaan budaya Bali yang masih terjaga hingga kini.
-          </h2>
-      
-          <!-- Konten tersembunyi -->
-          <div id="moreContent-besakih" class="hidden space-y-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Menyusuri area pura yang luas, menyaksikan upacara adat, belajar sejarah keagamaan Bali, serta menikmati pemandangan spektakuler Gunung Agung dan lembah di sekitarnya.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Area parkir, toilet umum, pusat informasi, jasa pemandu lokal, dan kios oleh-oleh tersedia untuk kenyamanan pengunjung.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Desa Besakih, Kecamatan Rendang, Kabupaten Karangasem, Bali — sekitar 2 jam perjalanan dari Denpasar.
-            </p>
-          </div>
-      
-          
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-besakih">
-            Baca Selengkapnya
-          </button>
-        </div>
-      </div>
+            <!-- Konten tersembunyi -->
+            <div id="moreContent-tanahlot" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Pura di atas karang laut dengan aura spiritual yang kuat. Pemandangan matahari terbenam yang dramatis dan romantis. Upacara keagamaan dan pertunjukan tari tradisional (terjadwal). Deretan toko seni dan kuliner lokal di
+                sekitar kawasan wisata.
+              </p>
 
-      <div class="flex flex-col md:flex-row items-center gap-6 mt-12">
-        <!-- Gambar di kiri -->
-        <img
-          src="/img/lempuyang.webp"
-          alt="Pura Lempuyang Luhur"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-      
-        <!-- Teks di kanan -->
-        <div class="md:w-1/2 space-y-4">
-          <h1 class="text-3xl font-bold text-gray-900">Pura Lempuyang Luhur</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Gerbang Surga di Timur Bali</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Pura Lempuyang Luhur terkenal dengan "Gate of Heaven", gerbang ikonik yang membingkai latar belakang Gunung Agung secara dramatis. Terletak di puncak bukit Lempuyang, pura ini merupakan salah satu pura tertua dan paling suci di Bali.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Perjalanan ke pura ini melibatkan mendaki ratusan anak tangga dan menyusuri jalur spiritual yang penuh ketenangan. Setibanya di atas, pengunjung disuguhkan panorama yang luar biasa dan pengalaman spiritual yang mendalam.
-          </h2>
-      
-          <!-- Konten tersembunyi -->
-          <div id="moreContent-lempuyang" class="hidden space-y-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Mendaki menuju pura, berfoto di gerbang surga, mengikuti doa atau meditasi, menikmati udara segar pegunungan, dan mengabadikan lanskap Gunung Agung yang ikonik.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Tersedia area parkir di kaki gunung, jasa ojek lokal untuk menghemat tenaga, toilet umum, serta tempat ibadah. Pemandu lokal juga tersedia untuk menjelaskan filosofi pura.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Desa Tri Buana, Kecamatan Abang, Kabupaten Karangasem, Bali — ± 2 jam 30 menit dari Denpasar.
-            </p>
-          </div>
-      
-          <!-- Baca Selengkapnya -->
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-lempuyang">
-            Baca Selengkapnya
-          </button>
-        </div>
-      </div>
-      
-      
-      
-       <!-- Destinasi panglipuran (Gambar kanan) -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-6">
-        <img
-          src="/img/panglipuran.jpg"
-          alt="Desa Panglipuran"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-        <div class="md:w-1/2">
-          <!-- Teks awal -->
-          <h1 class="text-3xl font-bold text-gray-900">Desa Panglipuran</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Keharmonisan Tradisi dan Arsitektur Bali</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Desa Panglipuran adalah salah satu desa adat terbaik di Bali yang terkenal dengan kebersihannya dan tata ruang tradisionalnya. Desa ini merepresentasikan arsitektur Bali yang autentik, di mana setiap rumah memiliki gaya bangunan yang seragam dan teratur.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Dikelilingi oleh hutan bambu yang rimbun dan suasana yang tenang, Panglipuran menjadi destinasi sempurna bagi mereka yang ingin melihat kehidupan masyarakat Bali yang masih memegang teguh adat dan budaya leluhur.
-          </h2>
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Area parkir luas dan area pedestrian yang tertata. Tersedia pusat informasi, toilet, dan tempat istirahat. Jalur akses memadai untuk semua usia. Lokasi sangat cocok untuk wisatawan budaya dan fotografer.
+              </p>
 
-          <!-- Teks tersembunyi -->
-          <div id="moreContent-panglipuran" class="hidden space-y-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Menjelajahi jalan utama desa dengan rumah tradisional yang indah, berinteraksi dengan penduduk lokal yang ramah, mengikuti tur budaya, menikmati suasana desa yang tenang, dan mengunjungi hutan bambu di sekeliling desa.
-            </p>
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Desa Beraban, Kecamatan Kediri, Kabupaten Tabanan, Bali ± 1 jam dari Denpasar</p>
+            </div>
 
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Tersedia area parkir, pusat informasi wisata, toilet umum, penjual oleh-oleh khas desa, serta pemandu lokal yang bisa menjelaskan sejarah dan tradisi desa.
-            </p>
-
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Desa Kubu, Kecamatan Bangli, Kabupaten Bangli, Bali — sekitar 1 jam 15 menit perjalanan dari Denpasar.
-            </p>
+            <!-- Tombol tampilkan -->
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-tanahlot">
+              Read More
+            </button>
           </div>
 
-          <!-- Tombol untuk menampilkan konten -->
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-panglipuran">
-            Baca Selengkapnya
-          </button>
+          <!-- Gambar di kanan -->
+          <img src="/img/tanahlot.jpg" alt="Tanah Lot" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
         </div>
-      </div>
 
-      <!-- Destinasi gunung agung (Gambar kiri) -->
-      <div class="flex flex-col md:flex-row items-center gap-6 mt-[60px]">
-        <img
-          src="/img/gunung-agung.jpg"
-          alt="Gunung Agung"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-        
-        <div class="md:w-1/2">
-          <h1 class="text-3xl font-bold text-gray-900">Gunung Agung</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Puncak Spiritual Pulau Dewata</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Gunung Agung adalah gunung tertinggi dan paling sakral di Bali, menjulang setinggi 3.031 meter. Gunung ini menjadi tempat penting dalam kepercayaan masyarakat Hindu Bali dan menjadi lokasi Pura Besakih yang megah di lerengnya.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Mendaki ke puncak Gunung Agung memberikan pengalaman spiritual dan petualangan luar biasa, dengan panorama matahari terbit yang memukau dari atas awan.
-          </h2>
-      
-          <!-- Teks tambahan tersembunyi -->
-          <div id="moreContent-agung" class="hidden space-y-4 mt-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Mendaki (via jalur Pura Besakih atau Pura Pasar Agung), menikmati panorama sunrise, dan mengikuti upacara keagamaan di sekitar pura.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Pura, area parkir, pemandu lokal, serta tempat istirahat di pos pendakian.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Kabupaten Karangasem, Bali — sekitar 2 jam perjalanan dari Denpasar.
-            </p>
-          </div>
-      
-          <!-- Tombol Baca Selengkapnya -->
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-agung">
-            Baca Selengkapnya
-          </button>
-        </div>
-      </div>
+        <!-- Destinasi tirta empul (Gambar kiri) -->
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <img src="/img/tirta.jpg" alt="Tirta Empul" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+          <div class="md:w-1/2">
+            <h1 class="text-3xl font-bold text-gray-900">Tirta Empul</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Pusat Penyucian Suci di Tengah Alam</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Tirta Empul adalah pura suci air di daerah Tampaksiring, Bali, yang terkenal dengan kolam mata airnya tempat umat Hindu melakukan ritual penyucian diri. Air dari mata air alami di pura ini dianggap suci dan memiliki kekuatan
+              spiritual.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Dikelilingi oleh pemandangan alam yang hijau dan tenang, pengalaman di Tirta Empul tidak hanya memberikan ketenangan batin, tetapi juga mengenalkan pada nilai-nilai budaya dan spiritual masyarakat Bali.
+            </h2>
 
-      <!-- Destinasi gunung batur (Gambar kanan) -->
-      <div class="flex flex-col md:flex-row-reverse items-center gap-6 mt-[60px]">
-        <img
-          src="/img/gunung-batur.jpg"
-          alt="Gunung Batur"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-      
-        <div class="md:w-1/2">
-          <h1 class="text-3xl font-bold text-gray-900">Gunung Batur</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Kawah Aktif dan Pemandangan Sunrise</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Gunung Batur adalah gunung berapi aktif yang terkenal di Bali, terletak di daerah Kintamani. Pemandangan kawah luas dan danau Batur di sekitarnya menawarkan keindahan alam yang luar biasa, terutama saat matahari terbit dari puncaknya.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Pendakian singkat namun menantang membuat gunung ini menjadi pilihan populer untuk para pendaki pemula dan pecinta alam yang ingin menikmati panorama Bali dari ketinggian.
-          </h2>
-      
-          <!-- Teks tambahan tersembunyi -->
-          <div id="moreContent-batur" class="hidden space-y-4 mt-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Pendakian sunrise, menjelajah kawah lava hitam, berendam di pemandian air panas alami, serta menikmati kopi khas Kintamani.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Guide lokal, tempat parkir, warung makan, toilet, serta pemandian air panas di sekitar Danau Batur.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Kintamani, Kabupaten Bangli, Bali — sekitar 2 jam dari Ubud atau Denpasar.
-            </p>
-          </div>
-      
-          <!-- Tombol Baca Selengkapnya -->
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-batur">
-            Baca Selengkapnya
-          </button>
-        </div>
-      </div>
-      
-      <div class="flex flex-col md:flex-row items-center gap-6 mt-[60px]">
-        <img
-          src="/img/gunung-batukaru.jpg"
-          alt="Gunung Batukaru"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-      
-        <div class="md:w-1/2">
-          <h1 class="text-3xl font-bold text-gray-900">Gunung Batukaru</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Ketentraman Alam di Pegunungan Bali Barat</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Gunung Batukaru merupakan gunung tertinggi kedua di Bali dan dianggap suci oleh masyarakat setempat. Terletak di kawasan hutan hujan tropis yang lebat, gunung ini menawarkan suasana damai dan kesunyian yang sangat berbeda dari destinasi ramai lainnya.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Jalur pendakiannya yang menantang dan alami sangat cocok bagi pencinta trekking yang mencari kedekatan dengan alam dan spiritualitas Bali.
-          </h2>
-      
-          <!-- Teks tambahan tersembunyi -->
-          <div id="moreContent-batukaru" class="hidden space-y-4 mt-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Pendakian menuju puncak, meditasi di Pura Luhur Batukaru, dan eksplorasi ekosistem hutan hujan tropis yang masih alami.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Jalur pendakian tradisional, area parkir dekat pura, serta fasilitas spiritual dan rest area di kaki gunung.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Desa Wongaya Gede, Kecamatan Penebel, Kabupaten Tabanan — sekitar 2,5 jam dari Denpasar.
-            </p>
-          </div>
-      
-          <!-- Tombol Baca Selengkapnya -->
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-batukaru">
-            Baca Selengkapnya
-          </button>
-        </div>
-      </div>
+            <!-- Teks tersembunyi -->
+            <div id="moreContent-tirtaempul" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Melakukan ritual penyucian diri di pancuran, menikmati arsitektur pura, serta belajar tentang makna spiritual yang terkandung dalam tradisi umat Hindu Bali.</p>
 
-      <div class="flex flex-col md:flex-row-reverse items-center gap-6 mt-[60px]">
-        <img
-          src="/img/gunung-catur.webp"
-          alt="Gunung Catur"
-          class="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2"
-        />
-      
-        <div class="md:w-1/2">
-          <h1 class="text-3xl font-bold text-gray-900">Gunung Catur</h1>
-          <h2 class="text-xl font-semibold text-gray-800">Menyatu dengan Kabut dan Danau Beratan</h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
-            Gunung Catur terletak di kawasan Bedugul, berdiri megah di antara hamparan hijau dan kabut yang menyelimuti Danau Beratan. Gunung ini menjadi tujuan favorit pendaki yang mencari keindahan alami dan suasana hening.
-          </h2>
-          <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
-            Pendakian menuju puncak Gunung Catur menyuguhkan pemandangan danau yang memesona dari atas serta udara segar khas dataran tinggi Bali.
-          </h2>
-      
-          <!-- Teks tambahan tersembunyi -->
-          <div id="moreContent-catur" class="hidden space-y-4 mt-4">
-            <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Trekking menyusuri hutan tropis, menikmati sunrise di puncak gunung, dan mengunjungi Pura Pucak Mangu di jalur pendakian.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Akses jalur pendakian dari dekat Danau Beratan, beberapa warung lokal, serta area parkir dan titik istirahat.
-            </p>
-      
-            <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
-            <p class="text-gray-700 text-sm leading-relaxed">
-              Kawasan Bedugul, Kecamatan Baturiti, Kabupaten Tabanan — sekitar 2 jam dari Denpasar.
-            </p>
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Area parkir, pemandu lokal, toko oleh-oleh, ruang ganti dan kamar mandi bagi pengunjung yang mengikuti ritual.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Desa Manukaya, Kecamatan Tampaksiring, Kabupaten Gianyar, Bali — sekitar 1 jam perjalanan dari Ubud.</p>
+            </div>
+
+            <!-- Tombol Baca Selengkapnya -->
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-tirtaempul">
+              Baca Selengkapnya
+            </button>
           </div>
-      
-          <!-- Tombol Baca Selengkapnya -->
-          <button class="read-more-btn text-blue-600 text-sm mt-2 hover:underline" data-target="moreContent-catur">
-            Baca Selengkapnya
-          </button>
         </div>
-      </div>
-      
-      
+
+        <div class="flex flex-col md:flex-row-reverse items-center gap-6 mt-12">
+          <!-- Gambar di kanan -->
+          <img src="/img/besakih.jpg" alt="Pura Besakih" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+
+          <!-- Teks di kiri -->
+          <div class="md:w-1/2 space-y-4">
+            <h1 class="text-3xl font-bold text-gray-900">Pura Besakih</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Pusat Spiritualitas di Lereng Gunung Agung</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Pura Besakih adalah pura terbesar dan paling suci di Bali, terletak di lereng Gunung Agung. Kompleks ini terdiri dari 23 pura yang berdiri megah dengan latar belakang gunung yang agung, menciptakan suasana spiritual yang kuat
+              dan mengesankan.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Sebagai pusat dari seluruh pura di Bali, Besakih menjadi tempat penting untuk upacara keagamaan besar. Pengunjung dapat merasakan aura mistis, ketenangan alam, dan kekayaan budaya Bali yang masih terjaga hingga kini.
+            </h2>
+
+            <!-- Konten tersembunyi -->
+            <div id="moreContent-besakih" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Menyusuri area pura yang luas, menyaksikan upacara adat, belajar sejarah keagamaan Bali, serta menikmati pemandangan spektakuler Gunung Agung dan lembah di sekitarnya.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Area parkir, toilet umum, pusat informasi, jasa pemandu lokal, dan kios oleh-oleh tersedia untuk kenyamanan pengunjung.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Desa Besakih, Kecamatan Rendang, Kabupaten Karangasem, Bali — sekitar 2 jam perjalanan dari Denpasar.</p>
+            </div>
+
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-besakih">
+              Baca Selengkapnya
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-6 mt-12">
+          <!-- Gambar di kiri -->
+          <img src="/img/lempuyang.webp" alt="Pura Lempuyang Luhur" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+
+          <!-- Teks di kanan -->
+          <div class="md:w-1/2 space-y-4">
+            <h1 class="text-3xl font-bold text-gray-900">Pura Lempuyang Luhur</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Gerbang Surga di Timur Bali</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Pura Lempuyang Luhur terkenal dengan "Gate of Heaven", gerbang ikonik yang membingkai latar belakang Gunung Agung secara dramatis. Terletak di puncak bukit Lempuyang, pura ini merupakan salah satu pura tertua dan paling suci
+              di Bali.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Perjalanan ke pura ini melibatkan mendaki ratusan anak tangga dan menyusuri jalur spiritual yang penuh ketenangan. Setibanya di atas, pengunjung disuguhkan panorama yang luar biasa dan pengalaman spiritual yang mendalam.
+            </h2>
+
+            <!-- Konten tersembunyi -->
+            <div id="moreContent-lempuyang" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Mendaki menuju pura, berfoto di gerbang surga, mengikuti doa atau meditasi, menikmati udara segar pegunungan, dan mengabadikan lanskap Gunung Agung yang ikonik.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Tersedia area parkir di kaki gunung, jasa ojek lokal untuk menghemat tenaga, toilet umum, serta tempat ibadah. Pemandu lokal juga tersedia untuk menjelaskan filosofi pura.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Desa Tri Buana, Kecamatan Abang, Kabupaten Karangasem, Bali — ± 2 jam 30 menit dari Denpasar.</p>
+            </div>
+
+            <!-- Baca Selengkapnya -->
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-lempuyang">
+              Baca Selengkapnya
+            </button>
+          </div>
+        </div>
+
+        <!-- Destinasi panglipuran (Gambar kanan) -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-6">
+          <img src="/img/panglipuran.jpg" alt="Desa Panglipuran" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+          <div class="md:w-1/2">
+            <!-- Teks awal -->
+            <h1 class="text-3xl font-bold text-gray-900">Desa Panglipuran</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Keharmonisan Tradisi dan Arsitektur Bali</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Desa Panglipuran adalah salah satu desa adat terbaik di Bali yang terkenal dengan kebersihannya dan tata ruang tradisionalnya. Desa ini merepresentasikan arsitektur Bali yang autentik, di mana setiap rumah memiliki gaya
+              bangunan yang seragam dan teratur.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Dikelilingi oleh hutan bambu yang rimbun dan suasana yang tenang, Panglipuran menjadi destinasi sempurna bagi mereka yang ingin melihat kehidupan masyarakat Bali yang masih memegang teguh adat dan budaya leluhur.
+            </h2>
+
+            <!-- Teks tersembunyi -->
+            <div id="moreContent-panglipuran" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                Menjelajahi jalan utama desa dengan rumah tradisional yang indah, berinteraksi dengan penduduk lokal yang ramah, mengikuti tur budaya, menikmati suasana desa yang tenang, dan mengunjungi hutan bambu di sekeliling desa.
+              </p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Tersedia area parkir, pusat informasi wisata, toilet umum, penjual oleh-oleh khas desa, serta pemandu lokal yang bisa menjelaskan sejarah dan tradisi desa.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Desa Kubu, Kecamatan Bangli, Kabupaten Bangli, Bali — sekitar 1 jam 15 menit perjalanan dari Denpasar.</p>
+            </div>
+
+            <!-- Tombol untuk menampilkan konten -->
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-panglipuran">
+              Baca Selengkapnya
+            </button>
+          </div>
+        </div>
+
+        <!-- Destinasi gunung agung (Gambar kiri) -->
+        <div class="flex flex-col md:flex-row items-center gap-6 mt-[60px]">
+          <img src="/img/gunung-agung.jpg" alt="Gunung Agung" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+
+          <div class="md:w-1/2">
+            <h1 class="text-3xl font-bold text-gray-900">Gunung Agung</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Puncak Spiritual Pulau Dewata</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Gunung Agung adalah gunung tertinggi dan paling sakral di Bali, menjulang setinggi 3.031 meter. Gunung ini menjadi tempat penting dalam kepercayaan masyarakat Hindu Bali dan menjadi lokasi Pura Besakih yang megah di lerengnya.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Mendaki ke puncak Gunung Agung memberikan pengalaman spiritual dan petualangan luar biasa, dengan panorama matahari terbit yang memukau dari atas awan.
+            </h2>
+
+            <!-- Teks tambahan tersembunyi -->
+            <div id="moreContent-agung" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4 mt-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Mendaki (via jalur Pura Besakih atau Pura Pasar Agung), menikmati panorama sunrise, dan mengikuti upacara keagamaan di sekitar pura.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Pura, area parkir, pemandu lokal, serta tempat istirahat di pos pendakian.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Kabupaten Karangasem, Bali — sekitar 2 jam perjalanan dari Denpasar.</p>
+            </div>
+
+            <!-- Tombol Baca Selengkapnya -->
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-agung">
+              Baca Selengkapnya
+            </button>
+          </div>
+        </div>
+
+        <!-- Destinasi gunung batur (Gambar kanan) -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-6 mt-[60px]">
+          <img src="/img/gunung-batur.jpg" alt="Gunung Batur" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+
+          <div class="md:w-1/2">
+            <h1 class="text-3xl font-bold text-gray-900">Gunung Batur</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Kawah Aktif dan Pemandangan Sunrise</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Gunung Batur adalah gunung berapi aktif yang terkenal di Bali, terletak di daerah Kintamani. Pemandangan kawah luas dan danau Batur di sekitarnya menawarkan keindahan alam yang luar biasa, terutama saat matahari terbit dari
+              puncaknya.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">
+              Pendakian singkat namun menantang membuat gunung ini menjadi pilihan populer untuk para pendaki pemula dan pecinta alam yang ingin menikmati panorama Bali dari ketinggian.
+            </h2>
+
+            <!-- Teks tambahan tersembunyi -->
+            <div id="moreContent-batur" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4 mt-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Pendakian sunrise, menjelajah kawah lava hitam, berendam di pemandian air panas alami, serta menikmati kopi khas Kintamani.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Guide lokal, tempat parkir, warung makan, toilet, serta pemandian air panas di sekitar Danau Batur.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Kintamani, Kabupaten Bangli, Bali — sekitar 2 jam dari Ubud atau Denpasar.</p>
+            </div>
+
+            <!-- Tombol Baca Selengkapnya -->
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-batur">
+              Baca Selengkapnya
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-6 mt-[60px]">
+          <img src="/img/gunung-batukaru.jpg" alt="Gunung Batukaru" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+
+          <div class="md:w-1/2">
+            <h1 class="text-3xl font-bold text-gray-900">Gunung Batukaru</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Ketentraman Alam di Pegunungan Bali Barat</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Gunung Batukaru merupakan gunung tertinggi kedua di Bali dan dianggap suci oleh masyarakat setempat. Terletak di kawasan hutan hujan tropis yang lebat, gunung ini menawarkan suasana damai dan kesunyian yang sangat berbeda dari
+              destinasi ramai lainnya.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">Jalur pendakiannya yang menantang dan alami sangat cocok bagi pencinta trekking yang mencari kedekatan dengan alam dan spiritualitas Bali.</h2>
+
+            <!-- Teks tambahan tersembunyi -->
+            <div id="moreContent-batukaru" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4 mt-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Pendakian menuju puncak, meditasi di Pura Luhur Batukaru, dan eksplorasi ekosistem hutan hujan tropis yang masih alami.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Jalur pendakian tradisional, area parkir dekat pura, serta fasilitas spiritual dan rest area di kaki gunung.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Desa Wongaya Gede, Kecamatan Penebel, Kabupaten Tabanan — sekitar 2,5 jam dari Denpasar.</p>
+            </div>
+
+            <!-- Tombol Baca Selengkapnya -->
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-batukaru">
+              Baca Selengkapnya
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse items-center gap-6 mt-[60px]">
+          <img src="/img/gunung-catur.webp" alt="Gunung Catur" class="w-full md:w-1/2 h-64 object-cover rounded-lg backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2" />
+
+          <div class="md:w-1/2">
+            <h1 class="text-3xl font-bold text-gray-900">Gunung Catur</h1>
+            <h2 class="text-xl font-semibold text-gray-800">Menyatu dengan Kabut dan Danau Beratan</h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8">
+              Gunung Catur terletak di kawasan Bedugul, berdiri megah di antara hamparan hijau dan kabut yang menyelimuti Danau Beratan. Gunung ini menjadi tujuan favorit pendaki yang mencari keindahan alami dan suasana hening.
+            </h2>
+            <h2 class="text-gray-700 text-sm leading-relaxed text-justify indent-8 mt-4">Pendakian menuju puncak Gunung Catur menyuguhkan pemandangan danau yang memesona dari atas serta udara segar khas dataran tinggi Bali.</h2>
+
+            <!-- Teks tambahan tersembunyi -->
+            <div id="moreContent-catur" class="max-h-0 overflow-hidden opacity-0 transition-all duration-700 ease-in-out space-y-4 mt-4">
+              <h3 class="text-lg font-semibold text-gray-800">Aktivitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Trekking menyusuri hutan tropis, menikmati sunrise di puncak gunung, dan mengunjungi Pura Pucak Mangu di jalur pendakian.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Fasilitas</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Akses jalur pendakian dari dekat Danau Beratan, beberapa warung lokal, serta area parkir dan titik istirahat.</p>
+
+              <h3 class="text-lg font-semibold text-gray-800">Lokasi</h3>
+              <p class="text-gray-700 text-sm leading-relaxed">Kawasan Bedugul, Kecamatan Baturiti, Kabupaten Tabanan — sekitar 2 jam dari Denpasar.</p>
+            </div>
+
+            <!-- Tombol Baca Selengkapnya -->
+            <button class="read-more-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-6" data-target="moreContent-catur">
+              Baca Selengkapnya
+            </button>
+          </div>
+        </div>
+
         <!-- Tombol Aksi -->
         <div class="text-center pt-6">
           <button class="bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-2 rounded-full font-semibold mr-4 transition">Lihat Galeri</button>
