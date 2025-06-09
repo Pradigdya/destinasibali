@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rakkas&display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS Library CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -236,12 +239,12 @@
 
 
     <section class="min-h-screen flex flex-col justify-center bg-white px-4 py-8">
-      <h2 class="text-center text-3xl font-bold mb-8">Destinasi Populer</h2>
+      <h2 class="text-center text-3xl font-bold mb-8" data-aos="slide-up">Destinasi Populer</h2>
 
     <!-- Start Card Destinasi -->
     <div class="flex flex-wrap justify-center items-stretch gap-4 mt-[34px]">
       <!-- Tirta Empul -->
-      <div class="w-[263px] bg-white border border-gray-200 rounded-lg bg-white/30 backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2 flex flex-col">
+      <div class="w-[263px] bg-white border border-gray-200 rounded-lg bg-white/30 backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2 flex flex-col" data-aos="zoom-in" data-aos-delay="100">
         <a href="#">
           <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/tirtha-empu.jpg" alt="tirtha-empu" />
         </a>
@@ -259,7 +262,7 @@
       </div>
 
       <!-- Pura Ulun -->
-      <div class="w-[263px] bg-white border border-gray-200 rounded-lg bg-white/30 backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2 flex flex-col">
+      <div class="w-[263px] bg-white border border-gray-200 rounded-lg bg-white/30 backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2 flex flex-col" data-aos="zoom-in" data-aos-delay="100">
         <a href="#">
           <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/Pura_Ulun.jpg" alt="Pura Ulun" />
         </a>
@@ -276,7 +279,7 @@
         </div>
       </div>
       <!-- Pantai Kelingking -->
-      <div class="w-[263px] bg-white border border-gray-200 rounded-lg bg-white/30 backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2 flex flex-col">
+      <div class="w-[263px] bg-white border border-gray-200 rounded-lg bg-white/30 backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2 flex flex-col" data-aos="zoom-in" data-aos-delay="100">
         <a href="#">
           <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/pantai-kelingking.png" alt="pantai-kelingking" />
         </a>
@@ -293,7 +296,7 @@
         </div>
       </div>
       <!-- Tanah Lot -->
-      <div class="w-[263px] bg-white border border-gray-200 rounded-lg bg-white/30 backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2 flex flex-col">
+      <div class="w-[263px] bg-white border border-gray-200 rounded-lg bg-white/30 backdrop-blur-3xl shadow-xl hover:shadow-slate-600/60 transition-all duration-300 ease-in-out hover:-translate-y-2 flex flex-col" data-aos="zoom-in" data-aos-delay="100">
         <a href="#">
           <img class="rounded-t-lg w-full h-[200px] object-cover" src="/img/tanahlot.jpg" alt="tanahlot" />
         </a>
@@ -314,6 +317,7 @@
 
     <!-- Card Destinasi End -->
 
+    
     <!-- Start Card Detail Destinasi -->
     <div class="max-w-6xl mx-auto px-4 py-16">
       <div id="destinasi" class="px-5 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"></div>
@@ -975,6 +979,15 @@
   AOS.init();
 </script>
 
+<!-- AOS Library JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // animasi hanya terjadi sekali
+    duration: 1000, // durasi animasi
+    easing: 'ease-in-out', // transisi halus
+  });
+</script>
 
 
   </body>
