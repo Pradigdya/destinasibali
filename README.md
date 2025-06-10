@@ -2,7 +2,7 @@
 
 Selamat datang di repository resmi proyek website **Landing Page Destinasi Bali**. Website ini dirancang untuk memperkenalkan keindahan Pulau Bali kepada dunia, mulai dari pantai-pantainya yang memesona, budaya yang kaya, hingga spot wisata ikonik yang wajib dikunjungi.
 
-![Bali Banner](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Pura_Ulun_Danu_Bratan%2C_Bali.jpg/1200px-Pura_Ulun_Danu_Bratan%2C_Bali.jpg)
+![Bali Banner](https://baliexception.com/wp-content/uploads/2024/03/Bali.webp)
 
 ---
 
